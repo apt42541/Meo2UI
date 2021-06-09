@@ -511,7 +511,7 @@ function VLib:Window(text, textgame, textcircle)
 							TweenInfo.new(.2, Enum.EasingStyle.Quad),
 							{Position = UDim2.new(0.595, -3, 0.289000005, -3)}
 						):Play()
-					Toggled = not Toggled
+					Toggled = true 
 					pcall(callback, Toggled)
 			end
 			Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
