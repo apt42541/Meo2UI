@@ -501,7 +501,8 @@ function VLib:Window(text, textgame, textcircle)
 				end
 			)
 			if default == true  then 
-			TweenService:Create(
+					if Toggled == false then
+						TweenService:Create(
 							ToggleFrameRainbow,
 							TweenInfo.new(.2, Enum.EasingStyle.Quad),
 							{BackgroundTransparency = 0}
@@ -511,9 +512,21 @@ function VLib:Window(text, textgame, textcircle)
 							TweenInfo.new(.2, Enum.EasingStyle.Quad),
 							{Position = UDim2.new(0.595, -3, 0.289000005, -3)}
 						):Play()
-				Toggled = not Toggled
+					else
+						TweenService:Create(
+							ToggleFrameRainbow,
+							TweenInfo.new(.2, Enum.EasingStyle.Quad),
+							{BackgroundTransparency = 1}
+						):Play()
+						TweenService:Create(
+							ToggleDot,
+							TweenInfo.new(.2, Enum.EasingStyle.Quad),
+							{Position = UDim2.new(0.104999997, -3, 0.289000005, -3)}
+						):Play()
+					end
+					Toggled = not Toggled
 					pcall(callback, Toggled)
-				end 
+				end
 			
 			Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
 		end
