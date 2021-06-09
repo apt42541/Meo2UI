@@ -511,18 +511,6 @@ function VLib:Window(text, textgame, textcircle)
 							TweenInfo.new(.2, Enum.EasingStyle.Quad),
 							{Position = UDim2.new(0.595, -3, 0.289000005, -3)}
 						):Play()
-					else
-						TweenService:Create(
-							ToggleFrameRainbow,
-							TweenInfo.new(.2, Enum.EasingStyle.Quad),
-							{BackgroundTransparency = 1}
-						):Play()
-						TweenService:Create(
-							ToggleDot,
-							TweenInfo.new(.2, Enum.EasingStyle.Quad),
-							{Position = UDim2.new(0.104999997, -3, 0.289000005, -3)}
-						):Play()
-					end
 					Toggled = not Toggled
 					pcall(callback, Toggled)
 			end
