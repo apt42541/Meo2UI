@@ -576,14 +576,14 @@ function VLib:Window(text, textgame, textcircle)
 
 			SliderIndicator.Name = "SliderIndicator"
 			SliderIndicator.Parent = SliderFrame
-			SliderIndicator.BackgroundColor3 = Color3.fromRGB(67,136,246)
+			SliderIndicator.BackgroundColor3 = Color3.fromRGB(253, 69, 71)
 			SliderIndicator.BorderSizePixel = 0
 			SliderIndicator.Position = UDim2.new(-0.00260408712, 0, 0.0363603085, 0)
 			SliderIndicator.Size = UDim2.new((start or 0) / max, 0, 0, 11)
 
 			GradientSlider.Color =
             ColorSequence.new {
-            ColorSequenceKeypoint.new(0.00, Color3.fromRGB(67,136,246)),
+            ColorSequenceKeypoint.new(0.00, Color3.fromRGB(253, 69, 71)),
             ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255,255,255))
 			}
 			GradientSlider.Name = "ButtonGradient"
