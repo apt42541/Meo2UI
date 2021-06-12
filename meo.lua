@@ -230,7 +230,7 @@ function VLib:Window(text, textgame, textcircle)
 
 		Tab.Name = "Tab"
 		Tab.Parent = TabHolder
-		Tab.BackgroundColor3 = Color3.fromRGB(67,136,246)
+		Tab.BackgroundColor3 = Color3.fromRGB(253, 69, 71)
 		Tab.Size = UDim2.new(0, 170, 0, 35)
 		Tab.AutoButtonColor = false
 		Tab.Font = Enum.Font.SourceSans
@@ -241,7 +241,7 @@ function VLib:Window(text, textgame, textcircle)
 		
 		GradientTab.Color =
             ColorSequence.new {
-            ColorSequenceKeypoint.new(0.00, Color3.fromRGB(67,136,246)),
+            ColorSequenceKeypoint.new(0.00, Color3.fromRGB(253, 69, 71)),
             ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255,255,255))
         }
         GradientTab.Name = "ButtonGradient"
