@@ -425,14 +425,14 @@ function VLib:Window(text, textgame, textcircle)
 
 			ToggleFrameRainbow.Name = "ToggleFrameRainbow"
 			ToggleFrameRainbow.Parent = ToggleFrame
-			ToggleFrameRainbow.BackgroundColor3 = Color3.fromRGB(67,136,246)
+			ToggleFrameRainbow.BackgroundColor3 = Color3.fromRGB(253, 69, 71)
 			ToggleFrameRainbow.BackgroundTransparency = 1.000
 			ToggleFrameRainbow.Position = UDim2.new(-0.0198377371, 0, 0.00601506233, 0)
 			ToggleFrameRainbow.Size = UDim2.new(0, 40, 0, 22)
 
 			GradientToggle.Color =
             ColorSequence.new {
-            ColorSequenceKeypoint.new(0.00, Color3.fromRGB(67,136,246)),
+            ColorSequenceKeypoint.new(0.00, Color3.fromRGB(253, 69, 71)),
             ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255,255,255))
 			}
 			GradientToggle.Name = "ButtonGradient"
